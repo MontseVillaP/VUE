@@ -1,0 +1,133 @@
+body {
+    padding: 30px;
+    background: ;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: cover;
+background-color: rgba(0, 0, 0, 0.55);
+
+}
+.navbar{
+    opacity: 50%;
+}
+/* Titulo */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+  font-family: 'Satisfy', cursive;
+  font-weight: 600;
+  font-size: 150px;
+}
+
+.txt {
+  position: absolute;
+  width: 450px;
+  left: 36%;
+  margin-left: -200px;
+  height: 40px;
+  top: 40%;
+  margin-top: -20px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 550px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #78D6DF;
+}
+
+.belize {
+  color: #69F665;
+}
+
+.pomegranate {
+  color: #F6E465;
+}
+
+.green {
+  color: #F67F65;
+}
+
+.midnight {
+  color: #D0C3F2 ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Satisfy&display=swap');
+.mot{
+  font-family: 'Questrial', sans-serif;
+  font-weight: 600;
+  font-size: 20px; 
+  text-align: right;
+margin-left: 900px;
+    opacity: 100%;
+}
+.tit{
+    margin-top: -180px;
+     width: 500px;
+    background-color:rgba(255, 254, 210 ,0.6);
+    padding-top: -30px;
+    padding-bottom: 5px;
+}
+.lieu{
+    
+}
+.voya{
+    left: 50%;
+    padding-left: 500px;
+}
+.titu{
+    font-family: 'Satisfy', cursive;
+    margin-top: -180px;
+     width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    font-size: 50px;
+}
+.comen{
+      margin-top: -300px;
+}
+ul{
+    list-style: none;
+}
+.formulario{
+    font-size: 30px;
+    color:#45B071 ;
+    width: 400px;
+    background-color: rgba(244, 240, 226, 0.6);
+}
+.co{
+       left: 70%;
+    padding-left: 500px;
+}

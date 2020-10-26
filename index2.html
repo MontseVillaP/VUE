@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Filtros</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="img/logo.png" rel="icon" sizes="25x25">  
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+  
+<body background="img/paradis2.jpg">
+<main>
+<nav class="navbar navbar-expand-sm bg-white navbar-white">
+
+    <img src="img/logo.png" alt="logo" style="width:60px; top:-50px;" href="index.html">
+  
+    <div class="mot">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index3.html">Precios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index2.html">Filtros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index4.html">Deseos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Inicio</a>
+    </li>
+  </ul>
+    </div>
+  
+</nav>
+<br>
+
+
+
+<div class="tit">
+<font color="#2D899B ">
+    <marquee>
+       <h1 v-if="mostrar" align="center" v-text="mensajes.title2" style="font-family: 'Satisfy', cursive;" ></h1> 
+        </marquee>
+
+
+    <transition appear name="animate" enter-active-class="animate__animated animate__swing"
+       leave-active-class="animate__animated animate__backOutLeft ">
+  <h1 align="center" style=" font-family: 'Questrial', sans-serif; font-size: 15px;"><i>Filtros</i></h1>
+</transition>
+ </font> 
+    </div>
+
+ <div class="lieu">
+      <font>
+<ul>
+      <li  v-for="lugar in buscarLugar" style="font-family: 'Questrial', sans-serif; font-size: 20px; color:#CBCBCB ;" >
+          <i>{{lugar.titulo}}</i>
+          </li>
+    <li  v-for="lieu2 in buscarLugar2" style="font-family: 'Questrial', sans-serif; font-size: 20px; color:#D6EDEE ;" >
+          <i>{{lieu2.titulo}}</i>
+          </li>
+    
+      </ul>
+    </font>
+     		<form action="" class="formulario">
+                <template v-if="lugar">
+				<label for="lugar">México</label><br>
+                     <h2 v-for="lugar in buscarLugar"  style="font-family: 'Questrial', sans-serif; font-size: 20px; padding-left: 20px; color:#000000 ;"  >  {{lugar.titulo}} <br>{{lugar.pais}} <br>{{lugar.ciudad}}</h2>
+		          </template>
+                <template v-if="lieu2">
+				<label for="lieu2">Internacional</label>
+                      <h2 v-for="lieu2 in buscarLugar2"  style="font-family: 'Questrial', sans-serif; font-size: 20px; padding-left: 20px; color:#545151 ;" >  {{lieu2.titulo}} <br>{{lieu2.pais}} <br>{{lieu2.ciudad}}</h2>
+                    </template>
+     </form>
+     
+     
+     
+     <h2 v-if="hombre"  v-for="lugar in buscarLugar"  style="font-family: 'Questrial', sans-serif; font-size: 20px; padding-left: 20px; color:#000000 ;"  >  {{lugar.titulo}} <br>{{lugar.pais}} <br>{{lugar.ciudad}}</h2>
+   <h2  v-if="mujer" v-for="lieu2 in buscarLugar2"  style="font-family: 'Questrial', sans-serif; font-size: 20px; padding-left: 20px;" >  {{lieu2.titulo}} <br>{{lieu2.pais}} <br>{{lieu2.ciudad}}</h2>
+     
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/main06.js"></script>
+
+</body>
+</html>
